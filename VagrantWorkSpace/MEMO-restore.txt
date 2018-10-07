@@ -1,0 +1,16 @@
+# STOP ROCKETCHAT
+systemctl stop rocketchat
+systemctl status rocketchat
+
+#DELETE MONGO DB DATA
+mongo
+> use rocketchat
+> db.dropDatabase()
+
+#RESTORE DB DATA
+mongorestore /RocketChatShare/dump
+
+
+#START ROCKETCHAT
+systemctl start rocketchat
+systemctl status rocketchat

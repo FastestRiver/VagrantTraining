@@ -1,0 +1,11 @@
+vagrant 2.1.5
+VirtualBox 5.1.38
+## 5.2.18だとフォルダ同期が上手くいかない
+Ansible X.X.X
+
+■bento/centos-7.2
+とりあえずこっち使う
+
+■centos/7
+の場合は/etc/ssh/sshd_configでパスワード認証をOKにしないとダメ
+sshdの設定が異なる
