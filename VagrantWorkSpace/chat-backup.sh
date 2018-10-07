@@ -1,5 +1,5 @@
 #!/bin/sh
 
-mongodump -o /RocketChatShare/'date +%Y%m%d%H%M'/dump
+mongodump -o /RocketChatShare/`date "+%Y%m%d_%H%M%S"`/dump
 
 exit 0
