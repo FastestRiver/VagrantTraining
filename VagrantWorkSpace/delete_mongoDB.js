@@ -1,0 +1,2 @@
+use rocketchat
+db.dropDatabase()
